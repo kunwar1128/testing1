@@ -1,0 +1,643 @@
+/* Body */
+
+
+@font-face {
+    font-family: Chronicle;
+    src: url("Chronicle\ Display\ Italic.otf");
+}
+
+@font-face {
+    font-family: 'Museo Sans 700';
+    src: url("Museo\ Sans\ 700.ttf");
+}
+
+
+
+
+/* Title Section */
+#title {
+    /* height: 100vh; */
+}
+
+/* Navbar */
+
+.navbar{
+    pointer-events: none; /* prohibits blocking the links */
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.logo-image {
+    width: 8em;
+    pointer-events: all;
+}
+
+.navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2em;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.hamburger {
+    z-index: 1046;
+    pointer-events: all;
+}
+
+
+
+/* Offcanvas */
+
+.offcanvas {
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 100vw;
+    transition-duration: .8s;
+    /* transition-delay: .3s; */
+    transform: translateX(-320px);/*to slide out offcanvas 320px*/ 
+}
+
+.offcanvas-entire-field {
+    display: flex;
+    height: 100vh;
+  }
+
+.offcanvasOnField {
+    background-color: white;
+    flex: 0 0 320px; /* do not grow, do not shrink, start at 320px */
+}
+
+.offcanvas-body {
+    text-transform: uppercase;
+    padding: 75px 0;
+    /* font-family: 'Museo Sans 700'; */
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    margin: 25px 25px 0 25px
+}
+
+.offcanvas-body a{
+    padding: 11px;
+}
+
+.offcanvasOffField {
+    background-color: rgba(0, 0, 0, 0);
+    flex: 1;  /* grow */
+}
+
+/* Hamburger Button does's highlight after clicking */
+#offcanvasClose:focus {
+    outline: 0;
+}
+
+.slide-opened body {
+    overflow: hidden;
+}
+
+
+
+/* Header Section: Welcome */
+
+.header-content{
+    height: 100vh;
+}
+
+.background_image_1 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.welcome{
+    position: fixed;
+    height: 100vh;
+    text-align: center;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    z-index: -5;
+    /* color: white; */
+}
+
+.welcome-text{
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Kurale', serif;
+    font-size: 70px;
+    font-style: italic;
+}
+
+.welcome-text2{
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Kurale', serif;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.welcome-text2-adj{
+    letter-spacing: -2px;
+}
+
+
+
+
+
+/* About Us */
+
+#about_us{
+    background-color: white;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+
+.about_us_body {
+    text-align: center;
+    height: 100vh;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Kurale', serif;
+    font-style: italic;
+    /* color: wheat; */
+    color: black;
+}
+
+.about_us_body h1{
+    letter-spacing: 0.2em;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/* tetestimonial Section */
+
+#tetestimonial {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.background_image_2 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.tetestimonial{
+    text-align: center;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+
+.tetestimonial-heading{
+    font-size: 100px;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+
+.tetestimonial-text{
+    font-size: 20px;
+    font-family: 'Kurale', serif;
+    font-style: italic;
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.g-t-2,.g-t-3{
+    max-width: 490px;
+}
+
+.tetestimonial-footer{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family:'Kurale', serif;
+    font-weight: 600;
+}
+
+.tetestimonial-footer span{
+    color: gold;
+}
+
+
+
+
+
+/* Find Us Section */
+
+.spacing_find_us{height: 2vh;}
+
+#find_us{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.follow_us{
+    height: 10vh;
+    background: linear-gradient(360deg,#e9fbcf 10%,#1d7d8e 200%); 
+    border-radius: 100px;
+    margin-bottom: 3vh;
+}
+
+/* .background_image_3 {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    z-index: -5;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    right: 0px;
+    opacity: 0.8;
+} */
+
+.follow_us .row{
+    height: 10vh;
+}
+
+.instagram, .facebook{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.instagram:hover{
+    background-color: rgba(252, 175, 69, 0.85);
+}
+.facebook:hover{
+    background-color: rgba(66, 103, 178, 0.85);
+}
+
+.instagram > img,.facebook > img{
+    height: 5vh;
+    float: left;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.instagram > p, .facebook > p{
+    margin-bottom: 0;
+    color: black;
+    font-family: 'Kurale', serif;
+    font-style: italic;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+
+
+/* .find_us_body_container{
+    height: 85vh;
+} */
+
+.find_us_body{
+    height: 85vh;
+}
+
+.left_find_us{
+    padding-top: 5vh;
+    height: 85vh;
+    background-color: #CAFFC3;
+    border-radius: 10px;
+    font-family: 'Kurale', serif;
+    font-style: italic;
+}
+
+.left_find_us h3{
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.left_find_us h5{
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+.left_find_us .f_u_g{
+    line-height: 20px;
+}
+.left_find_us .f_u_g-adj{
+    letter-spacing: -1px;
+}
+.left_find_us p{
+    font-size: 14px;
+}
+.left_find_us hr{
+    width: 265px;
+}
+.left_find_us td{
+    padding-left: 25px;
+}
+
+.find_us_bold{
+    font-weight: 600;
+}
+#find_us_adj{
+    letter-spacing: 0.07em;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.l_f_u_adj{
+    max-width: 265px;
+}
+
+
+
+.right_find_us{
+    border-radius: 10px;
+    padding: 0;
+    position: relative;
+}
+
+.right_find_us .row{
+    width: 100%;
+    height: 100%;
+}
+
+
+#gmap_canvas{
+    position: absolute;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 85vh;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.g_maps_open{
+    position: absolute;
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+}
+.g_maps_open div{
+    position: absolute;
+    width: 100%;
+    top: 35%;
+}
+
+.g_maps_open i{
+    width: 100%;
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    opacity: 50%;
+    -webkit-transition: opacity 0.15s ease-in;
+       -moz-transition: opacity 0.15s ease-in;
+         -o-transition: opacity 0.15s ease-in;
+}
+
+.g_maps_open:hover i{
+    opacity: 80%;
+}
+
+.g_maps_open p{
+    visibility: hidden;
+    text-align: center;
+    color: white;
+    width: 120px;
+    margin: 0 auto;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.g_maps_open:hover p{
+    visibility: initial;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        margin: 1.6em 0;
+    }
+
+    /* About Us */
+    .about_us_body{
+        font-size: 18px;
+    }
+
+}
+
+
+@media (min-width: 2000px) {
+
+    /* About Us */
+    .about_us_body{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 2000px){
+    
+
+    /* tetestimonial Section */
+
+    /* .tetestimonial-heading{
+        font-size: 100px;
+    }
+    
+    .tetestimonial-text{
+        font-size: 30px;
+        max-width: 470px;
+    }
+
+    .tetestimonial-footer{
+        font-size: 14px;
+    } */
+}
+
+@media (max-width: 1200px) {
+
+    /* Find Us Section */
+
+    .g_maps_open i{
+        opacity: 80%;
+    }
+    
+    
+    .g_maps_open p{
+        visibility: initial;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    /* Navbar */
+
+    /* Header Welcome */
+
+    .welcome > .col{
+        padding-bottom: 25vh;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* Navbar */
+
+    .logo-image {
+        width: 5em;
+    }
+
+    /* Header Welcome */
+
+    .welcome-text{
+        font-size: 32px;
+    }
+
+    .welcome-text2{
+        font-size: 13px;
+    }
+
+    .welcome-text2-adj{
+        letter-spacing: -1px;
+    }
+
+
+    /* About Us */
+
+    .about_us_body{
+        max-width: 390px;
+    }
+    
+
+    /* tetestimonial Section */
+
+    .tetestimonial-heading{
+        font-size: 75px;
+    }
+
+    .tetestimonial-text{
+        font-size: 18px;
+        max-width: 350px;
+    }
+
+    .tetestimonial-footer{
+        font-size: 18px;
+    }
+
+
+    /* Find Us Section */
+
+    #find_us{
+        height: 115vh;
+    }
+    .find_us_body{
+        height: 100vh;
+    }
+    .left_find_us{
+        height: 100vh;
+    }
+
+    #gmap_canvas{
+        /* height: 85vh; */
+    }
+
+    .g_maps_open div{
+        top: 25vh;
+    }
+
+    .g_maps_open i{
+        /* padding-top: 115px; */
+    }
+}
+
+@media (max-width: 575px) {
+
+    /* Find Us */
+    .find_us_body hr{
+        width: 250px;
+    }
+    .find_us_body th,td{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 475px) {
+
+    /* tetestimonial Section */
+
+    .tetestimonial-heading{
+        font-size: 50px;
+    }
+
+    .tetestimonial-text{
+        font-size: 16px;
+        max-width: 270px;
+    }
+
+    .tetestimonial-footer{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 773px) and (min-width: 768px),
+        (max-width: 280px){
+
+    /* Find Us */
+    
+    .left_find_us h3{
+        padding-top: 15px;
+    }
+    .left_find_us h5{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .left_find_us hr{
+        width: 180px;
+    }
+    .left_find_us th{
+        font-size: 12px;
+    }
+    .left_find_us td{
+        padding-left: 5px;
+        font-size: 11px;
+    }
+    
+    #find_us_adj{
+        font-size: 11px;
+        width: 200px;
+    }
+}

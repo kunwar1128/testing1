@@ -1,0 +1,403 @@
+
+/* Welcome section */
+
+.welcome{
+    top: -70px;
+}
+
+
+
+/* Menu section */
+
+/* Menu Navbar */
+
+.menu_legend{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#navbar{
+    width: 100%;
+    height: 50px;
+    margin-top: 18px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgb(228, 247, 253);
+}
+#navbar a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+.navbar-start {
+    width: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-item{
+    margin: 0 30px 8px;
+    height: 32px;
+    text-align: center;
+    white-space: nowrap;
+}
+.navbar-menu .navbar-item {
+    font-size: 18px;
+    transition: background-color 0.26s, color 0.26s, font-weight 0.26s, border-bottom 0.26s;
+}
+.navbar-menu .navbar-item.active {
+    /* background-color: aquamarine; */
+    font-weight: bold;
+    border-bottom: 2px solid rgb(120, 200, 247);
+}
+
+
+
+
+/* Menu itself */
+
+#menu, .category{
+    /* background-color: #F5F3F1; */
+    background-color: rgb(228, 247, 253);
+}
+
+
+.category{
+    position: sticky;
+    height: 122px;
+    top: 0px;
+    z-index: 1;
+    padding-top: 73px;
+    margin: 90px auto 45px auto;
+    text-align: center;
+    font-family: 'Kurale', serif;
+    box-shadow: 5px 5px 5px rgb(228, 247, 253);
+}
+
+.category_with_text h1{
+    margin-bottom: 0;
+}
+.category_with_text p{
+    font-size: 14px;
+    background-color: rgb(228, 247, 253);
+    box-shadow: 5px 5px 5px rgb(228, 247, 253);
+}
+
+
+.card{
+    height: 400px;
+    width: 300px;
+    border-radius: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card img{
+    border-radius: 50px 50px 0 0;
+    width: 100%;
+    height: 50%;
+}
+
+#beverages img{
+    width: 100%;
+    height: 70%;
+}
+
+.veg_card{
+    margin-bottom: 0;
+}
+
+.veg{
+    font-size: medium;
+    color: rgb(3, 160, 3);
+}
+
+.small_text .card-body{
+    padding-bottom: 0;
+}
+.small_text p{
+    font-size: 14px;
+}
+
+small{
+    text-align: right;
+    padding: 0 50px 20px 0;
+    color: rgb(197, 1, 1);
+    font-weight: 600;
+}
+
+.card_text_only{
+    padding-bottom: 0px;
+}
+.card_text_only .card-title{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+.card_text_only .card-text{
+    font-size: 15px;
+    border-bottom: 1px solid rgb(0, 162, 255);
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+}
+
+.card_text_center{
+    text-align: center;
+}
+
+.price_adj{
+    padding-right: 25px;
+    font-size: 12px;
+}
+
+.color_black{
+    color: black;
+}
+.card_inline_adj{
+    color: rgb(197, 1, 1);
+    font-weight: 600;
+}
+
+.card_more_adj_1 .card-text{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.card_more_adj_2 .card-title{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* Hiding the price for all the items in the menu */
+small{
+    visibility: hidden;
+}
+
+
+
+
+
+@media (min-width: 1200px){
+
+    /* Navbar Top */
+
+   .navbar-start{
+       justify-content: center;
+   }
+}
+
+@media (min-width: 992px){
+
+    /* Navbar Scrollbar */
+    
+    .navbar-start::-webkit-scrollbar{
+        width: 2px;
+        height: 5px;
+        border-radius: 100px;
+        background-color: rgb(191, 208, 223);
+    }
+    .navbar-start::-webkit-scrollbar-thumb{
+        background: rgb(120, 200, 247);
+        border-radius: 100px;
+    }
+    .navbar-start::-webkit-scrollbar-thumb:hover {
+        background: rgb(14, 167, 228); 
+      }
+}
+
+@media (min-width: 768px){
+
+    /* Navbar Top */
+
+   .navbar{
+       margin-top: 7px;
+   }
+}
+
+
+
+
+@media  (max-width: 1400px) {
+
+    /* Card */
+    .card{
+        height: 375px;
+        width: 250px;
+    }
+
+    .card_text_only .card-title{
+        font-size: 18px;
+    }
+    .card_text_only .card-text{
+        font-size: 13px;
+    }
+
+}
+
+@media  (max-width: 1200px) {
+
+    /* Card */
+    .card{
+        height: 414px;
+        width: 276px;
+    }
+
+    .card_text_only .card-title{
+        font-size: 20px;
+    }
+    .card_text_only .card-text{
+        font-size: 14px;
+    }
+
+}
+
+@media  (max-width: 991px) {
+
+    /* Welcome */
+    .welcome{
+        top: 0px;
+    }
+
+    /* Card */
+    .card{
+        height: 315px;
+        width: 210px;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .card-text{
+        font-size: 12px;
+    }
+    .small_text p{
+        font-size: 12px;
+    }
+
+    .card_text_only .card-title{
+        padding-top: 0px;
+        padding-bottom: 15px;
+        font-size: 16px;
+    }
+    .card_text_only .card-text{
+        font-size: 12px;
+    }
+
+    .card_more_adj_2 .card-title{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 1460px) and (min-width: 1400px),
+        (max-width: 1270px) and (min-width: 1200px),
+        (max-width: 1090px) and (min-width: 992px),
+        (max-width: 855px) and (min-width: 768px){
+
+    #navbar{
+        width: 88%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:768px) and (min-width: 576px){
+
+    /* Welcome */
+    .welcome-text{
+        font-size: 50px;
+    }
+}
+
+@media (max-width:767px){
+
+    /* Navbar Top */
+
+    .navbar{
+        padding: 0;
+    }
+
+    /* Menu Navbar */
+
+    #navbar{
+        margin-top: 50px;
+        padding-top: 10px;
+        align-items: center;
+    }
+
+    .navbar-item{
+        margin: 0 25px 15px;
+    }
+
+    /* Menu itself */
+
+    .category{
+        top: 0px;
+        height: 55px;
+        padding-top: 8px;
+    }
+    .category_with_text{
+        top: -10px;
+    }
+
+    .category_with_text h1{
+        padding-top: 10px;
+        line-height: 18px;
+    }
+    .category_with_text p{
+        margin-top: 10px;
+        padding-bottom: 15px;
+        line-height: 0px;
+        font-size: 12px;
+        background-color: rgb(228, 247, 253);
+        box-shadow: 5px 5px 5px rgb(228, 247, 253);
+    }
+}
+
+@media (max-width: 575px){
+
+
+    /* Navbar for Menu */
+
+    .navbar-item{
+        margin: 0 20px 15px;
+    }
+    
+    /* Card */
+    .card{
+        width: 235px;
+        height: 352px;
+    }
+    .card-title{
+        font-size: 18px;
+    }
+    .card-text{
+        font-size: 14px;
+    }
+
+    .card_text_only .card-title{
+        padding-top: 5px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .card_text_only .card-text{
+        font-size: 12px;
+    }
+
+    .card_more_adj_2 .card-title{
+        margin-bottom: 30px;
+    }
+
+    /* Menu itself */
+
+    .category{
+        padding-top: 10px;
+    }
+}
